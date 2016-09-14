@@ -1,8 +1,8 @@
 <?php include("cabecalho.php"); ?>
-	<h1>Formul·rio de Cadastro</h1>
+	<h1>Formul√°rio de Cadastro</h1>
 		<form action="adiciona-produto.php">
 			Nome: <input type="text" name="nome"/> <br />
-			PreÁo: <input type="text" name ="preco"/> <br />
+			Pre√ßo: <input type="text" name ="preco"/> <br />
 			<input type="submit" value="Cadastrar"/>
 		</form>
 <?php include("rodape.php"); ?>
