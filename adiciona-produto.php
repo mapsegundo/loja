@@ -12,7 +12,7 @@ $query = "insert into produtos(nome, preco) values ('{$nome}', {$preco})";
 		</p>
 	<?php } else{ ?>
 		<p class="alert alert-danger">
-		<strong>O produto não foi adicionado!</strong>
+		<strong>O produto nao foi adicionado!</strong>
 		</p>
 	<?php };
 mysqli_close($conexao);
