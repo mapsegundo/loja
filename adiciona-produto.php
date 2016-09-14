@@ -1,4 +1,5 @@
 <?php include("cabecalho.php"); ?>
+<?php include("conecta.php"); ?>
 <?php
 
 function insereProduto($conexao, $nome, $preco) {
@@ -8,7 +9,6 @@ function insereProduto($conexao, $nome, $preco) {
 
 $nome = $_GET["nome"];
 $preco = $_GET["preco"];
-$conexao = mysqli_connect('localhost', 'root', '', 'loja');
 
 if (insereProduto($conexao, $nome, $preco)) {
     ?>
