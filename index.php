@@ -13,14 +13,13 @@ include("logica-usuario.php");?>
     <p class="alert-danger">Voce nao tem acesso a essa funcionalidade!</p>
 <?php } ?>
 
-
+                <h1>Bem Vindo(a)</h1>
+		<?php $nome = "Marshall"; ?>
+		<h3><strong>a Loja do <?= $nome; ?></strong></h3>
+                
 <?php if(usuarioEstaLogado()){ ?>
     <p class="text-success">Voce esta logado como <?=  usuarioLogado();?>. </p>
 <?php } else{ ?>
-
-		<h1>Bem Vindo(a)</h1>
-		<?php $nome = "Marshall"; ?>
-		<h3><strong>a Loja do <?= $nome; ?></strong></h3>
                 
                 <h2>Login</h2>
                 <form action="login.php" method="post">

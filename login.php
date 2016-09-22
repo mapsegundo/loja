@@ -8,7 +8,7 @@
 if($usuario == null){
     header("Location: index.php?login=false");
 } else{
-    logaUsuario($email);
+    logaUsuario($usuario["email"]);
     header("Location: index.php?login=true");
     
 }

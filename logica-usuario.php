@@ -16,5 +16,5 @@ function usuarioLogado(){
 }
 
 function logaUsuario($email){
-    setcookie("usuario_logado", email, time() + 60);
+    setcookie("usuario_logado", $email, time() + 60);
 }
