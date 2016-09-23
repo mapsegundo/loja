@@ -18,7 +18,7 @@ if(array_key_exists('usado', $_POST)){
 if (insereProduto($conexao, $nome, $preco, $descricao, $categoria_id, $usado)) {
     ?>
     <p class="text-success">
-        Produto <?= $nome; ?>, <?= $preco; ?> adicionado com sucesso!
+        Produto <?= $nome; ?> adicionado com sucesso!
     </p>
 <?php } else { 
     $msg = mysqli_error($conexao);

@@ -1,21 +1,9 @@
 <?php include("cabecalho.php");
 include("logica-usuario.php");?>
 
-<?php if(isset($_SESSION["success"])) { ?>
-    <p class="alert-success"><?= $_SESSION["success"] ?></p>
-<?php
-    unset($_SESSION["success"]);
-} ?>
-    
-<?php if(isset($_SESSION["danger"])) { ?>
-    <p class="alert-danger"><?= $_SESSION["danger"] ?></p>
-<?php
-    unset($_SESSION["danger"]);
-} ?>
-
-                <h1>Bem Vindo(a)</h1>
-		<?php $nome = "Marshall"; ?>
-		<h3><strong>a Loja do <?= $nome; ?></strong></h3>
+<h1>Bem Vindo(a)</h1>
+<?php $nome = "Marshall"; ?>
+<h3><strong>a Loja do <?= $nome; ?></strong></h3>
                 
 <?php if(usuarioEstaLogado()){ ?>
     <p class="text-success">Voce esta logado como <?=  usuarioLogado()?> </p>
