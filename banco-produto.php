@@ -1,5 +1,4 @@
-<?php include("conecta.php");?>
-<?php
+<?php require_once("conecta.php");
 
 function listaProdutos($conexao){
     $produtos = array();
@@ -13,6 +12,8 @@ function listaProdutos($conexao){
 
 function insereProduto($conexao, $nome, $preco, $descricao, $categoria_id, $usado) {
     $query = "insert into produtos(nome, preco, descricao, categoria_id, usado) values ('{$nome}', {$preco}, '{$descricao}', {$categoria_id}, {$usado})";
+    //var_dump($query);
+    //die();
     return mysqli_query($conexao, $query);
 }
 
