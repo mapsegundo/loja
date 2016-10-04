@@ -1,3 +1,4 @@
-<?php $conexao = mysqli_connect('localhost', 'root', '', 'loja'); 
-//PARA O DEPLOY NO HOSTINGER
-//<?php $conexao = mysqli_connect('mysql.hostinger.com.br', 'u697585150_loja', 'lojaloja', 'u697585150_loja'); 
+<?php
+# $conexao = mysqli_connect("mysql.hostinger.com.br", "u548680052_loja", "lojaloja", "u548680052_loja");
+
+$conexao = mysqli_connect("localhost", "root", "", "loja");

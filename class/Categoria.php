@@ -1,25 +1,26 @@
 <?php
 
-class Categoria{
-    private $id;
-    private $nome;
-    
-    function getId() {
-        return $this->id;
-    }
+class Categoria {
 
-    function getNome() {
-        return $this->nome;
-    }
+	private $id;
+	private $nome;
 
-    function setId($id) {
-        $this->id = $id;
-    }
+	public function getId() {
+		return $this->id;
+	}
 
-    function setNome($nome) {
-        $this->nome = $nome;
-    }
+	public function setId($id) {
+		$this->id = $id;
+	}
 
+	public function getNome() {
+		return $this->nome;
+	}
+
+	public function setNome($nome) {
+		$this->nome = $nome;
+	}
 
 }
 
+?>
