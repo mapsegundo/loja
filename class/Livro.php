@@ -1,10 +1,10 @@
 <?php
 
-class Livro extends Produto {
+abstract class Livro extends Produto {
 
 	private $isbn;
-
-	public function getIsbn() {
+        
+        public function getIsbn() {
 		return $this->isbn;
 	}
 
@@ -13,7 +13,7 @@ class Livro extends Produto {
 	}
         
         public function calculaImposto(){
-            return $this->preco * 0.065;
+            return $this->getPreco() * 0.065;
         }
 }
 
